@@ -1,0 +1,7 @@
+name: fetcher2.dart
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+dependencies:
+  http: ^1.2.0
