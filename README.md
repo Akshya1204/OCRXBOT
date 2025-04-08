@@ -16,9 +16,6 @@ This project enhances OCR accuracy using Tesseract by integrating custom image p
 
 ---
 
-## 🏗️ Project Structure
-
-. ├── backend/ │ ├── app.py # FastAPI app with OCR endpoints │ ├── edsr_model.py # EDSR super-resolution model │ ├── image_utils.py # Preprocessing functions │ ├── ocr_engine.py # Tesseract integration ├── flutter_app/ # Flutter mobile application ├── telegram_bot/ # Telegram Bot code ├
 
 ## 🧪 Tech Stack
 
@@ -30,6 +27,11 @@ This project enhances OCR accuracy using Tesseract by integrating custom image p
 - **Other**: OpenCV, NumPy, PyTesseract, Pillow
 
 ---
+## (Optional) Activate Virtual Environment
+- If you're using a virtual environment (recommended):
+```sh
+venv\Scripts\activate
+```
 
 ## 🧠 How It Works
 - User uploads an image (via app, bot, or web).
@@ -38,3 +40,29 @@ This project enhances OCR accuracy using Tesseract by integrating custom image p
 - Tesseract performs OCR and returns the text.
 - Optionally, the text can be converted to speech.
 - Result is sent back to the user.
+
+## Requirments 
+```sh
+pip install fastapi pillow pytesseract opencv-python
+```
+
+## How to run
+## 1. Open Command Prompt
+-Press Win + R, type cmd, and hit Enter.
+
+## 2. Navigate to Your Project Directory
+-Replace the path below with the actual location of your web folder.
+```sh
+cd C:\Users\YourUsername\path\to\your\project\backend
+```
+-RUN
+```sh
+pythom -m server 1234
+```
+
+## 3.Open other command prompt 
+- replace the path below with remaining files folder 
+- RUN
+```sh
+prepocessing.py
+```
