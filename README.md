@@ -12,9 +12,29 @@ This project enhances OCR accuracy using Tesseract by integrating custom image p
 - 🌐 Web interface using Flask / Streamlit
 - 📱 Mobile app with Flutter (calls FastAPI backend)
 - 🤖 Telegram Bot interface for OCR on the go
-- 🔈 Optional Text-to-Speech (TTS) integration for audio output
 - 🔄 FastAPI endpoints for scalable backend processing
 
 ---
 
 ## 🏗️ Project Structure
+
+. ├── backend/ │ ├── app.py # FastAPI app with OCR endpoints │ ├── edsr_model.py # EDSR super-resolution model │ ├── image_utils.py # Preprocessing functions │ ├── ocr_engine.py # Tesseract integration ├── flutter_app/ # Flutter mobile application ├── telegram_bot/ # Telegram Bot code ├
+
+## 🧪 Tech Stack
+
+- **OCR Engine**: [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
+- **Language**: Python, Dart
+- **Frontend**: Flutter (mobile), Flask/Streamlit (web)
+- **Backend**: FastAPI
+- **Image Enhancement**: **EDSR (Enhanced Deep Super-Resolution)**
+- **Other**: OpenCV, NumPy, PyTesseract, Pillow
+
+---
+
+## 🧠 How It Works
+- User uploads an image (via app, bot, or web).
+- Image is sent to the FastAPI backend.
+- Backend preprocesses the image and enhances it using EDSR.
+- Tesseract performs OCR and returns the text.
+- Optionally, the text can be converted to speech.
+- Result is sent back to the user.
